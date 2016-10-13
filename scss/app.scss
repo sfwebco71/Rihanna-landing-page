@@ -1,0 +1,196 @@
+@charset 'utf-8';
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+@include motion-ui-transitions;
+@include motion-ui-animations;
+body {
+    background: url(../img/rihanna.jpg) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: $white;
+}
+
+.top-bar,
+.top-bar ul {
+    background-color: transparent;
+}
+
+.title-bar {
+    background: transparent;
+    color: #fefefe;
+    padding: 0.5rem;
+}
+
+#logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: $global-lineheight;
+    color: $white;
+    padding: 2rem 3rem;
+}
+
+.area {
+    letter-spacing: 7px;
+    animation: blur 1s ease-out infinite;
+    text-shadow: 0px 0px 1px #ff82be, 0px 0px 1px #ff82be;
+}
+
+@keyframes blur {
+    from {
+        text-shadow: 0px 0px 1px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7B96B8, 0px 0px 150px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px -10px 100px #7B96B8, 0px -10px 100px #7B96B8;
+    }
+}
+
+.menu .active > a {
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+}
+
+.menu > li > a {
+    border-radius: 10%;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    line-height: $global-lineheight;
+    margin-top: 2.25rem;
+    padding: 0.7rem 1rem;
+    line-height: 1;
+    color: #ff82be;
+}
+
+.menu > li > a:hover {
+    color: $white;
+}
+
+#hero {
+    background: rgba(255, 130, 190, 0.5);
+    border-radius: 2%;
+    padding: 7rem;
+    margin: 3rem auto;
+    width: 100%;
+    height: auto;
+}
+
+#hero-call-out {
+    font-size: 4rem;
+    line-height: $global-lineheight;
+    color: $white;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    vertical-align: middle;
+    border: 1px solid $white;
+    border-radius: 10%;
+    padding: 0.85em 1.5em;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    background-color: #2199e8;
+    color: #fefefe;
+}
+
+form {
+    padding-left: 10%;
+}
+
+footer {
+    background: url(../img/carbon_fibre.png);
+    background-position: center bottom;
+    width: 100%;
+    height: auto;
+    img {
+        background: $white;
+        border: 2px solid #ff82be;
+        border-radius: 100%;
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: .75rem 1rem;
+    }
+    #social-section {
+        width: 100%;
+        height: auto;
+        padding-bottom: 2rem;
+        h1 {
+            margin: 1rem 1rem 0;
+        }
+    }
+}
+
+#footer-section {
+    background: url(../img/binding_light.png);
+    padding: 2%;
+    margin-bottom: 0;
+    P {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.25rem;
+        font-weight: normal;
+        line-height: $global-lineheight;
+        color: $dark-gray;
+        a {
+            color: $dark-gray;
+            padding: 0 2%;
+        }
+        a:hover {
+            color: #5a5a5a;
+        }
+    }
+}
